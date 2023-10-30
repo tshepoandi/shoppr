@@ -24,7 +24,7 @@ function Hero() {
             </div>
         </div>
         <div className="hero-right">
-            <img src={process.env.PUBLIC_URL+'/model.jpg'} alt="" style={{width:'90%'}} />
+            <img src={process.env.PUBLIC_URL+'/model.jpg'} alt="" style={{width:'90%',borderRadius:"20px"}} />
         </div>
     </div>
   )
