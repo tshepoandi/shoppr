@@ -14,25 +14,25 @@ const Navbar = () => {
         </div>
         <ul className='nav-menu'>
             <li  onClick={()=>{setMenu("shop")}}>
-              <Link to="/">Shop</Link>   
+              <Link style={{textDecoration:'none', color:'grey'}} to="/">Shop</Link>   
             {menu==="shop"?<hr/>:<></>}
             </li>
-            <li onClick={()=>{setMenu("mens")}}>
-              <Link to="/mens">Men</Link>
+            <li onClick={()=>{setMenu("mens")}} >
+              <Link style={{textDecoration:'none', color:'grey'}}  to="/mens">Men</Link>
               {menu==="mens"?<hr/>:<></>}
             </li>
             <li onClick={()=>{setMenu("womens")}}>
-              <Link to="/womens">Women</Link>   
+              <Link style={{textDecoration:'none', color:'grey'}}  to="/womens">Women</Link>   
               {menu==="womens"?<hr/>:<></>}
             </li>
             <li onClick={()=>{setMenu("kids")}}>
-              <Link to="/kids">Kids</Link>
+              <Link style={{textDecoration:'none',color:'grey'}}  to="/kids">Kids</Link>
               {menu==="kids"?<hr/>:<></>}
             </li>
         </ul>
         <div className='nav-login-cart'>
             <button>
-              <Link to="/login">login</Link>
+              <Link style={{textDecoration:'none', color:'black'}}  to="/login">login</Link>
             </button>
             <Link to="/cart"><img src={cart}></img></Link>
             <div className="nav-cart-count">0</div>
