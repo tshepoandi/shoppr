@@ -10,10 +10,8 @@ import LoginSignUp from './Pages/LoginSignUp';
 
 function App() {
   return (
-    <div>
       <BrowserRouter>
         <Navbar/>
-      </BrowserRouter>
         <Routes>
           <Route path="/" element={Shop}/>
           <Route path="/mens" element={<ShopCategory category="men"/>}/>
@@ -25,8 +23,9 @@ function App() {
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/login" element={<LoginSignUp/>}/>
         </Routes>
+      </BrowserRouter>
+       
       
-    </div>
   );
 }
 
